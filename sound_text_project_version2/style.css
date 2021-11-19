@@ -1,0 +1,272 @@
+body{
+  background-color: black;
+  align-items: center;
+  font-family: sans-serif;
+  overflow: visible;
+}
+
+canvas.wave{
+   padding-left: 0;
+   padding-right: 0;
+   margin-left: auto;
+   margin-right: auto;
+   top:0;bottom:0;right:0;left:0;
+   margin:auto;
+   position: absolute;
+   width: 560px;
+   opacity: 0.5;
+}
+
+canvas.p5Canvas{
+    /* position:absolute;
+    top:0;
+    left:0; */
+    /* width:100%;
+    height:100%;
+    z-index:-1; */
+}
+
+/*<canvas id="defaultCanvas0" class="p5Canvas" style="width: 830px; height: 610px;" width="1660" height="1220"></canvas> */
+
+/* #myContainer{
+  position: absolute;
+  top: 120px;
+} */
+
+#defaultCanvas0 {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  width:800px;
+  top:0;
+  left:1px;
+  opacity: 0.7;
+}
+div.button{
+  position:fixed;
+  padding: 20px;
+  gap:10px;
+	width:60px;
+	height:80%;
+	left:3%;
+	top:140px;
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  z-index: 999;
+}
+div.button_below{
+  left:5%;
+  right:5%;
+  bottom:5%;
+  width: 80%
+  padding:0px;
+  position: absolute;
+  gap:20px;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap-reverse;
+  flex-direction: row;
+
+
+}
+div.button_right{
+  position:fixed;
+  padding: 20px;
+  color: white;
+  gap:10px;
+	width:300px;
+	height:200px;
+	right:5%;
+	top:70px;
+  display:inline-table;
+  text-align:justify;
+  z-index: 999;
+}
+.b{
+  background-color: transparent;
+  outline: none;
+  border: 2px #FFB300;
+  color: #B78700;
+  text-shadow: 0px 0px 1px yellow;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  box-shadow: 0px 0px 4px yellow;
+}
+.b:hover{
+  color: white;
+  text-shadow: 0px 0px 3px white;
+  box-shadow: 0px 0px 5px white;
+}
+button.b:active {
+  text-shadow: 0px 0px 3px black;
+  box-shadow: 0px 0px 5px blue;
+}
+
+#p2{
+  text-align: left;
+}
+
+/* for front page and other basic settings */
+.logo{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 100px;
+  height: 100px;
+  z-index: 100;
+}
+
+.bannerDiv{
+  position: absolute;
+  top: 10px;
+  left:130px;
+  width: 400px;
+  height: 100px;
+  border-left: 2px solid white;
+  padding-left: 20px;
+  z-index: 100;
+}
+
+.banner{
+  font-family: sans-serif;
+  font-weight: bold;
+  color: white;
+  font-size: 30px;
+  cursor: default;
+}
+
+.banner:hover{
+  color: #fff89c;
+}
+
+.mainIntro{
+  padding: 150px;
+  position: absolute;
+  width: 80%;
+  height: 150px;
+
+}
+
+#introText{
+  font-family: sans-serif;
+  font-size: 20px;
+  color: white;
+}
+
+.frontpageBtn{
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  border: 5px solid #fff89c;
+  color: white;
+  font-size: 14px;
+  transition-duration: 1s;
+  margin: 50px;
+  cursor: pointer;
+}
+
+.frontpageBtn:hover{
+  background-color: #fff89c;
+  color: black;
+}
+
+#fpBtnDiv{
+  position: fixed;
+  top: 500px;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -300px;
+}
+
+/* for greeting page */
+.greeting{
+  position: absolute;
+  width: 80%;
+  /* height: 100%; */
+  padding: 150px;
+}
+
+#preGreetDiv{
+  position: absolute;
+  width: 80%;
+  height: 150px;
+}
+
+#preGreet{
+  font-family: sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
+  color: #c7810c;
+}
+
+#greetingTextDiv{
+  position: absolute;
+  width: 70%;
+  top: 250px;
+  left: 13%;
+}
+
+#greetingText{
+  font-family: sans-serif;
+  font-size: 18px;
+  color: white;
+}
+
+/* image page */
+
+#preImageDiv{
+  /* height: 100%; */
+  padding: 150px;
+  position: absolute;
+  width: 80%;
+  height: 150px;
+}
+
+#preImage{
+  font-family: sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
+  color: #c7810c;
+}
+
+.galleryView{
+  position: absolute;
+  top: 280px;
+  left:150px;
+  width: 80%;
+}
+
+div.gallery {
+  margin: 20px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  color: white;
+  font-size: 10px;
+}
